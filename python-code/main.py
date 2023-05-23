@@ -5,6 +5,7 @@ from tv_episode_titles import *
 from twiter_usernames import *
 from movie_regex import *
 from song_lyrics_regex import *
+from ip_address import *
 
 
 
@@ -49,13 +50,13 @@ if __name__ == "__main__":
     elif choice == "5":
         jokes_regex(string)
     elif choice == "6":
-        tv_episodes_regex(string)
+        episode_regex(string)
     elif choice == "7":
-        formatted_dates_regex(string)
-    elif choice == "8":
-        color_code_regex(string)
+        date_regex(string)
+    # elif choice == "8":
+    #     color_code_regex(string)
     elif choice == "9":
-        ip_address_regex(string)
+        ip_address(string)
 
 
 
