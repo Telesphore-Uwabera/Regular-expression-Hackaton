@@ -1,14 +1,11 @@
 import re
 
-episodes = ['Marvelous Maisel in the forest S12E12: Boardway runner',
-            'Holy Grail (1975)',
-            'Brian (1979)',
-            'Moly (2000)']
+def episode_regex(episode):
+            
+           regex = '(.+)\d{2}E\d{2}:(.+)'
+           match = re.search(regex, episode)
 
-regex = '(.+)\d{2}E\d{2}:(.+)'
-
-
-for episode in episodes:
-    match = re.search(regex, episode)
     if match:
-        print(episode)
+        print(f"{episode} is in the right format.")
+    else:
+        print(f"{episode} is not in the right format.")
