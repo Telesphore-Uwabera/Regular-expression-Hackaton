@@ -1,15 +1,11 @@
 import re
 
-dates = ['21-MAR-1982',
-         '31st-APR-1982',
-         '21-JUN-1875',
-         '09/DEC/1672',
-         ]
+def dates_regex(dates):
+         
+         regex = '^\d{2}\-[A-Z]{3}\-\d{4}$'
+         match = re.search(regex, dates)
 
-
-regex = '^\d{2}\-[A-Z]{3}\-\d{4}$'
-
-for date in dates:
-    match = re.search(regex, date)
-    if match:
-        print(date)
+if match:
+        print(f"{date} is in the right format.")
+    else:
+        print(f"{date} is not in the right format.")
