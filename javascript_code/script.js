@@ -83,6 +83,7 @@ function validateInput() {
 }
 
 
+
 function getMatchingStrings(regex) {
     var set_list = [
         'Different (1971)',
