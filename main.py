@@ -46,6 +46,16 @@ if __name__ == "__main__":
         usernames_regex(string)
     elif choice == "4":
         isbn_regex(string)
+    elif choice == "5":
+        jokes_regex(string)
+    elif choice == "6":
+        tv_episodes_regex(string)
+    elif choice == "7":
+        formatted_dates_regex(string)
+    elif choice == "8":
+        color_code_regex(string)
+    elif choice == "9":
+        ip_address_regex(string)
 
 
 
