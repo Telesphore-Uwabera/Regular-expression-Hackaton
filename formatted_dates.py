@@ -1,9 +1,9 @@
 import re
 
-def dates_regex(dates):
+def date_regex(date):
          
          regex = '^\d{2}\-[A-Z]{3}\-\d{4}$'
-         match = re.search(regex, dates)
+         match = re.search(regex, date)
 
 if match:
         print(f"{date} is in the right format.")
